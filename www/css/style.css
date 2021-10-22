@@ -25,6 +25,10 @@
       color:red;
     }
 
+    #remain::after{
+      content:"s";
+    }
+
 
 
 
