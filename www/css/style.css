@@ -12,9 +12,21 @@
     }
 
     #btnA {
-      background-color:yellow;
+      background-color:whitesmoke;
       color:green;
     }
+
+     #btnB {
+      background-color:whitesmoke;
+      color:green;
+    }
+     #btnC {
+      background-color:yellow;
+      color:red;
+    }
+
+
+
 
     #remain {
       font-weight:bold;
