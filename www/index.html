@@ -162,6 +162,7 @@
     var startTime = 0;
     var period = 0;
     var restartTime = 0;
+    var Mactive = false;
 
 
 
@@ -173,6 +174,8 @@
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
         $('#btnD').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
+
 
         
     }
@@ -230,6 +233,11 @@
     function btnDClick(e){
       active = true;
       restartTime = Date;
+    }
+
+    function btnEClick(e){
+      //Mactive = true;
+      music();
     }
     
  
