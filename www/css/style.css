@@ -24,6 +24,10 @@
       background-color:yellow;
       color:red;
     }
+    #btnE {
+      background-color:whitesmoke;
+      color:gray;
+    }
 
     #remain::after{
       content:"s";
@@ -103,6 +107,11 @@
     #btnD {
         font-size: 30px;
         position:absolute; top:500px; left:2%; width:28%; height:60px; 
+    }
+    
+    #btnE {
+        font-size: 30px;
+        position:absolute; top:500px; left:70%; width:28%; height:60px; 
     }
     
     
