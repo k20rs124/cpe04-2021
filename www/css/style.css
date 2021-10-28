@@ -29,6 +29,8 @@
       color:gray;
     }
 
+
+
     #remain::after{
       content:"s";
     }
@@ -113,6 +115,7 @@
         font-size: 30px;
         position:absolute; top:500px; left:70%; width:28%; height:60px; 
     }
+    
     
     
     #minute {
