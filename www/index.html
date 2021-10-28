@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -153,6 +157,9 @@
     var active = false;
     var startTime = 0;
     var period = 0;
+    var restartTime = 0;
+
+
 
 
     
@@ -161,6 +168,8 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
+
         
     }
 
@@ -178,6 +187,14 @@
       audio.play();
         
         
+    }
+
+
+
+    function music(){
+      var audio = new Audio();
+      audio.src = "Blue_Garnet.mp3";
+      audio.play();
     }
     
     // ButtonAがクリックされた時の処理
@@ -203,6 +220,13 @@
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間： " + period);
         
+    }
+
+    //ButtonDの処理
+    function btnDClick(e){
+      active = true;
+      restartTime = Date;
+      //music();
     }
     
  
@@ -233,7 +257,8 @@
     <div id="time">Time</div>
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
-    <button id="btnC">Set</button>  
+    <button id="btnC">Set</button>
+    <button id="btnD">Restart</button>
     <input type="number" id="minute" value=1 >
     <input type="number" id="second" value=0 >
 </body>
